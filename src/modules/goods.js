@@ -12,7 +12,7 @@ const mutations = {
 
 const actions = {
   getGoods({ commit }) {
-    const uri = 'http://pezl7mzdp.bkt.clouddn.com/db.json'
+    const uri = 'https://raw.githubusercontent.com/Sunny-zz/vue-elm/master/api/db.json'
     axios.get(uri).then(res => {
       // console.log(res.data)
       commit('getGoods', res.data.goods)
